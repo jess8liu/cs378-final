@@ -59,21 +59,21 @@ const EditPage = ({ note_info }) => {
         <div className="title_input_box">
           <textarea className='title_input' rows='1' placeholder='Set Title' value={title} onChange={(e) => setTitle(e.target.value)}>
           </textarea>
-          <button className='edit_page_btns'>
+          <button className='edit_page_btns' title="Pin">
             Pin
           </button>
         </div>
         <div className="tag_box">
-          <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter}>
+          <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter} title="Character Tag">
             Character
           </button>
-          <button className={`edit_page_btns ${lore ? 'selected btn' : 'unselected btn'}`} onClick={handleLore}>
+          <button className={`edit_page_btns ${lore ? 'selected btn' : 'unselected btn'}`} onClick={handleLore} title="Lore Tag">
             Lore
           </button>
-          <button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap}>
+          <button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap} title="Map Tag">
             Map
           </button>
-          <button className='edit_page_btns' onClick={handleAddTags}>
+          <button className='edit_page_btns' onClick={handleAddTags} title="Save Tags">
             Save Tags
           </button>
 
@@ -82,10 +82,10 @@ const EditPage = ({ note_info }) => {
       <div>
         <textarea className='note_input' placeholder="Put text here..." rows='15' value={note} onChange={(e) => { setNote(e.target.value) }}>
         </textarea>
-        <button onClick={() => { updateNote(); }}> Submit Text </button>
+        <button onClick={() => { updateNote(); }}> Save Changes </button>
       </div>
       <div>
-        <button onClick={handleDelete}>Trash</button>
+        <button onClick={handleDelete} title="Delete">Trash</button>
       </div>
     </div>
   )
