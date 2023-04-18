@@ -17,7 +17,6 @@ function MapEditPage(props) {
 						value={props.title}
             // onChange={(e) => setTitle(e.target.value)}
           />
-					<button className='edit_page_btns'>Pin</button>
 				</div>
 				<div className="tag_box">
           <button className={`edit_page_btns`}

@@ -317,6 +317,10 @@ tr {
   height: 47px;
 }
 
+.map_cell {
+  border-radius: 50px;
+}
+
 /* ------------------------------------------------------------- */
 /* COMPONENT: NOTE */
 
@@ -330,7 +334,7 @@ tr {
   align-items: center;
   font-size: 150%;
   padding: 10px;
-  width: 70%;
+  width: 85%;
 }
 
 .pin_btn {
@@ -384,4 +388,5 @@ tr {
   flex-grow: 1;
   border: 0.5px solid grey;
   height: 25px;
+  cursor: pointer;
 }

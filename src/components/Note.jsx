@@ -44,12 +44,9 @@ function Note(props) {
           <div className="title">
             {props.note_info.title}
           </div>
-          <button className="save_btn" onClick={props.edit_funct}> {/* TODO: rename class name*/}
+          {/* <button className="save_btn" onClick={props.edit_funct}>
             Edit
-          </button>
-          <button className="pin_btn" onClick={() => togglePin(props.note_info.is_pinned)}>
-            Pin
-          </button>
+          </button> */}
         </div>
 
         <div className="body_section">

@@ -66,7 +66,6 @@ function ImageEditPage(props) {
             placeholder='Set Title'
             value={title}
             onChange={(e) => setTitle(e.target.value)} />
-					<button className='edit_page_btns'>Pin</button>
 				</div>
 				<div className="tag_box">
           <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter}>

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import SettingList from "./SettingList";
 
 function MapNote(props) {
-
+	const [setting, setSetting] = useState(false);
 	const edit_funct = props.edit_funct;
+
+	const toggleSetting = (e) => {
+		e.preventDefault();
+		setSetting(!setting);
+	};
 
 	return (
 		<>
@@ -11,14 +17,9 @@ function MapNote(props) {
 					<div className="title">
 						{props.title}
 					</div>
-					<button className="save_btn" onClick={edit_funct}>
+					{/* <button className="save_btn" onClick={edit_funct}>
 						Edit
-					</button>
-					<button className="pin_btn"
-						// onClick={() => togglePin(props.note_info.is_pinned)}
-					>
-						Pin
-					</button>
+					</button> */}
 				</div>
 
 				<div className="body_section">
@@ -30,13 +31,13 @@ function MapNote(props) {
 
 				<div className="body_section">
 					<button className="setting_btn"
-						// onClick={toggleSetting}
+					onClick={toggleSetting}
 					>
 						Settings
 					</button>
 
 					<button className="trash_btn"
-						 onClick={() => props.deleteImage(props.src)}
+						onClick={() => props.deleteImage(props.src)}
 					>
 						Trash
 					</button>
@@ -44,12 +45,11 @@ function MapNote(props) {
 
 				{/* Settings List */}
 				{
-					// setting &&
+					setting &&
 					<>
 						<div className="dropdown_div">
-							{/* <SettingList
-								edit_funct={props.edit_funct}
-								trash_funct={() => handleDelete(props.note_info.cur_uid)} /> */}
+							<SettingList
+								edit_funct={edit_funct} />
 						</div>
 					</>
 

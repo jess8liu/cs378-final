@@ -59,9 +59,6 @@ const EditPage = ({ note_info }) => {
         <div className="title_input_box">
           <textarea className='title_input' rows='1' placeholder='Set Title' value={title} onChange={(e) => setTitle(e.target.value)}>
           </textarea>
-          <button className='edit_page_btns' title="Pin">
-            Pin
-          </button>
         </div>
         <div className="tag_box">
           <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter} title="Character Tag">

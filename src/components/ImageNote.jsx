@@ -5,9 +5,15 @@ import SettingList from "./SettingList.jsx";
 
 
 function ImageNote(props) {
-
 	const edit_funct = props.edit_funct;
 	const [title, setTitle] = useState('');
+	const [setting, setSetting] = useState(false);
+
+	const toggleSetting = (e) => {
+		e.preventDefault();
+		setSetting(!setting);
+	};
+
 
 	useEffect(() => {
 		const imageRef = storageRef(storage, props.src);
@@ -17,6 +23,7 @@ function ImageNote(props) {
 			alert(error);
 		})
 	}, []);
+	
 
 	return (
 		<>
@@ -25,12 +32,9 @@ function ImageNote(props) {
 					<div className="title">
 						{title}
 					</div>
-					<button className="save_btn" onClick={edit_funct}>
+					{/* <button className="save_btn" onClick={edit_funct}>
 						Edit
-					</button>
-					<button className="pin_btn">
-						Pin
-					</button>
+					</button> */}
 				</div>
 
 				<div className="body_section">
@@ -42,7 +46,7 @@ function ImageNote(props) {
 
 				<div className="body_section">
 					<button className="setting_btn"
-					// onClick={toggleSetting}
+					onClick={toggleSetting}
 					>
 						Settings
 					</button>
@@ -56,12 +60,11 @@ function ImageNote(props) {
 
 				{/* Settings List */}
 				{
-					// setting &&
+					setting &&
 					<>
 						<div className="dropdown_div">
-							{/* <SettingList
-								edit_funct={props.edit_funct}
-								trash_funct={() => handleDelete(props.note_info.cur_uid)} /> */}
+							<SettingList
+								edit_funct={edit_funct} />
 						</div>
 					</>
 
