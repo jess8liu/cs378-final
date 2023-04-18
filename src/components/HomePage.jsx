@@ -40,6 +40,9 @@ export default function HomePage(props) {
   const [imageList, setImageList] = useState([]);
   const [isImageEditing, setIsImageEditing] = useState(false);
 
+  const [tagSearched, setTagSearched] = useState('');
+  const [isTagSearch, setIsTagSearch] = useState(false);
+
   // ----------------------------------------------------------------------
   // FUNCTIONS
   // Shows the list of notes
@@ -148,10 +151,11 @@ export default function HomePage(props) {
     }
     if (search === '') {
       setIsSearching(false);
+      setIsTagSearch(false);
     } else {
       setIsSearching(true);
+      setIsTagSearch(false);
     }
-    // setSearch('');
   };
 
   const resetSearch = () => {
@@ -161,6 +165,7 @@ export default function HomePage(props) {
 
   // filters the display to show the notes with the tag that the user clicked on
   const handleTag = (tag) => {
+    setIsTagSearch(true);
     setImageSearchResults([])
     setSearchResults([]);
 
@@ -181,6 +186,7 @@ export default function HomePage(props) {
           alert(error);
         })
       }
+      setTagSearched('Characters');
     } else if (tag === 'lore') {
       for (let x = 0; x < listOfNotes.length; x++) {
         if (listOfNotes[x].lore) {
@@ -197,6 +203,7 @@ export default function HomePage(props) {
           alert(error);
         })
       }
+      setTagSearched('Lore');
     } else if (tag === 'map') {
       for (let x = 0; x < listOfNotes.length; x++) {
         if (listOfNotes[x].map) {
@@ -213,9 +220,9 @@ export default function HomePage(props) {
           alert(error);
         })
       }
+      setTagSearched('Maps');
     }
     setIsSearching(true);
-
   };
 
   // uploads the image to firebase storage with its metadata
@@ -302,11 +309,6 @@ export default function HomePage(props) {
               onChange={(event) => { setImageUpload(event.target.files[0]) }}>
             </input>
           </div>
-          {/* <button className="note_editor_btn" onClick={toggleSideBar}>
-            Collapse
-          </button> */}
-
-
         </div>
 
         {/* ------------------------------------------------------------------- */}
@@ -314,17 +316,6 @@ export default function HomePage(props) {
         <div className="note_list box">
           <div>
             {/* Show the notes if person is not currently editing the notes */}
-            {/* 
-            {imageList.map((url) => (
-              <>
-                <MapNote
-                  src={url}
-                  edit_funct={handleMapUpdate}
-                  deleteImage={deleteImage}
-                ></MapNote>
-              </>
-            ))} */}
-
 
             {!isEditing && !isMapEditing && !isImageEditing ? (
               // de
@@ -369,7 +360,16 @@ export default function HomePage(props) {
                     <>
                       <div className="home_box">
                         <h3>
-                          All Notes
+                          {isTagSearch ? (
+                            <>
+                            {tagSearched}
+                            </>
+                          ) : (
+                            <>
+                            Search Results for '{search}'
+                            </>
+                          )}
+                          
                         </h3>
                       </div>
 

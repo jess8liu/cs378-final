@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import MapCells from './MapCells';
 
 function MapEditPage(props) {
+	function alertFunction() {
+		alert("Saved!");
+	  }
 
 	return (
 		<div>
@@ -43,9 +46,7 @@ function MapEditPage(props) {
 					{/* <img src={props.src}></img> */}
 					<MapCells />
 				</div>
-			</div>
-			<div>
-				{/* <button onClick={handleDelete}>Trash</button> */}
+				<button onClick={alertFunction}> Save Changes </button>
 			</div>
 		</div>
 	)
