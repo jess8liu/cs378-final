@@ -307,18 +307,30 @@ input {
 
 table {
   width: 100%;
+  border: solid black 1px;
 }
 
 td {
   height: auto;
+  border: solid black 1px;
 }
 
 tr {
-  height: 47px;
+  height: 61px;
+  border: solid black 1px;
+}
+
+th {
+  border: solid black 1px;
+  margin: 0;
 }
 
 .map_cell {
-  border-radius: 50px;
+  border: none;
+  border-radius: 17.5px;
+  height: 35px;
+  width: 35px;
+  padding: 1%;
 }
 
 /* ------------------------------------------------------------- */

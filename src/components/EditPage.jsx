@@ -38,7 +38,7 @@ const EditPage = ({ note_info }) => {
       content: note,
       cur_uid: note_info.cur_uid,
     });
-    alert('updating:', note)
+    alert('Updating Note!', note)
   }
 
   const handleCharacter = () => {

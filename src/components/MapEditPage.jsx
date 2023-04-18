@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from 'react'
-// import { uid } from 'uid';
-// import { auth, database } from "./config.jsx";
-// import { set, ref, onValue, remove, update } from "firebase/database";
+import React, { useState, useEffect } from 'react';
 import MapCells from './MapCells';
 
 function MapEditPage(props) {

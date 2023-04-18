@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { auth, database } from "./config.jsx";
-// import LogoutButton from "./LogoutButton.jsx"
-// import HomePage from "./HomePage.jsx";
+
 function SideBar(props) {
 
   return (

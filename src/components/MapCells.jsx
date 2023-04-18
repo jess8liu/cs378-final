@@ -1,928 +1,658 @@
+import { useState } from "react";
+import MapButton from "./MapButton";
+
 function MapCells() {
   return (
     <>
       <table>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
           <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
-          </th>
-          <th>
-            <button className="map_cell">.</button>
+            <MapButton>.</MapButton>
           </th>
         </tr>
       </table>

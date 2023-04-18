@@ -74,7 +74,6 @@ function Note(props) {
                 trash_funct={() => handleDelete(props.note_info.cur_uid)} />
             </div>
           </>
-
         }
       </div>
     </>
