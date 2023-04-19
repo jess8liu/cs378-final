@@ -288,10 +288,15 @@ input {
   float: right;
 }
 
+.edit_save_btn {
+  float: right;
+}
+
 .note_input {
   width: 98%;
   padding: 10px;
   resize: vertical;
+  margin-bottom: 2%;
 }
 
 .btn {
@@ -320,8 +325,6 @@ input {
 .map {
   display: flex;
   width: 100%;
-  /* padding: 10%; */
-
   background-size: cover;
 }
 

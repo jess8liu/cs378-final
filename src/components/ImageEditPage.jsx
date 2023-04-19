@@ -40,7 +40,7 @@ function ImageEditPage(props) {
 	}, []);
 
 	const updateNote = () => {
-    updateMetadata(imageRef, newMetaData);
+		updateMetadata(imageRef, newMetaData);
 	}
 
 	const handleCharacter = () => {
@@ -60,24 +60,24 @@ function ImageEditPage(props) {
 		<div>
 			<div>
 				<div className="title_input_box">
-          <textarea
-            className='title_input'
-            rows='1'
-            placeholder='Set Title'
-            value={title}
-            onChange={(e) => setTitle(e.target.value)} />
+					<textarea
+						className='title_input'
+						rows='1'
+						placeholder='Set Title'
+						value={title}
+						onChange={(e) => setTitle(e.target.value)} />
 				</div>
 				<div className="tag_box">
-          <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter}>
-            Character
-          </button>
-          <button className={`edit_page_btns ${lore ? 'selected btn' : 'unselected btn'}`} onClick={handleLore}>
-            Lore
-          </button>
-          <button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap}>
-            Map
-          </button>
-          <button className='edit_page_btns' onClick={() => { updateNote(); }}>Save Tags</button>
+					<button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter}>
+						Character
+					</button>
+					<button className={`edit_page_btns ${lore ? 'selected btn' : 'unselected btn'}`} onClick={handleLore}>
+						Lore
+					</button>
+					<button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap}>
+						Map
+					</button>
+					<button className='edit_page_btns' onClick={() => { updateNote(); }}>Save Tags</button>
 				</div>
 			</div>
 			<div>
@@ -89,8 +89,14 @@ function ImageEditPage(props) {
 				</div>
 			</div>
 			<div>
-				<button onClick={() => { updateNote(); }}> Submit </button>
-				<button onClick={() => props.deleteImage(props.src)}>Trash</button>
+				<div>
+					<button className='edit_save_btn' onClick={() => { updateNote(); }}> Save Changes </button>
+				</div>
+
+				<div>
+					<button onClick={() => props.deleteImage(props.src)}>Trash</button>
+				</div>
+
 			</div>
 		</div>
 	)

@@ -3,6 +3,8 @@ import { storage } from "./config.jsx";
 import { ref as storageRef, uploadBytes, listAll, getDownloadURL, deleteObject, updateMetadata, uploadBytesResumable, getMetadata } from "firebase/storage";
 import SettingList from "./SettingList.jsx";
 
+// Icons & images
+import note_edit from "../images/note_edit.svg";
 
 function ImageNote(props) {
 	const edit_funct = props.edit_funct;

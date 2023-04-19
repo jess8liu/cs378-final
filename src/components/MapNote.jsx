@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import SettingList from "./SettingList";
 
+// Icons & images
+import note_edit from "../images/note_edit.svg";
+
 function MapNote(props) {
 	const [setting, setSetting] = useState(false);
 	const edit_funct = props.edit_funct;

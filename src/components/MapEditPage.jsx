@@ -41,12 +41,12 @@ function MapEditPage(props) {
           </button>
 				</div>
 			</div>
-			<div>
+			<div className='box'>
 				<div className='map' style={{ backgroundImage: 'url("https://i.pinimg.com/originals/ca/35/48/ca3548a64c848549747bd88a1e5a14bc.png")'}}>
 					{/* <img src={props.src}></img> */}
 					<MapCells />
 				</div>
-				<button onClick={alertFunction}> Save Changes </button>
+				<button className='edit_save_btn' onClick={alertFunction}> Save Changes </button>
 			</div>
 		</div>
 	)
