@@ -8,10 +8,10 @@ function MapButton() {
   const change_button_color = () => {
 
     if (index + 1 > 6) {
-        setIndex(0);
+      setIndex(0);
     }
     else {
-        setIndex(index + 1);
+      setIndex(index + 1);
     }
 
   }
@@ -19,17 +19,17 @@ function MapButton() {
   const divStyle = {
     backgroundColor: colors[index]
   };
-  
+
 
   return (
     <>
-      <button className="map_cell" 
-            style={divStyle}
-            onClick={change_button_color}
-            >.</button>
+      <button className="map_cell"
+        style={divStyle}
+        onClick={change_button_color}
+      >.</button>
     </>
   );
-  
+
 }
 
 export default MapButton;

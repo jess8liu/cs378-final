@@ -129,6 +129,9 @@ export default function HomePage(props) {
 
   // filters the display to show the search results
   const handleSearch = () => {
+    setIsImageEditing(false);
+    setMapEditingState(false);
+    setEditingState(false);
     setSearchResults([]);
     setImageSearchResults([]);
     // checks the image list first
@@ -165,6 +168,9 @@ export default function HomePage(props) {
 
   // filters the display to show the notes with the tag that the user clicked on
   const handleTag = (tag) => {
+    setEditingState(false);
+    setMapEditingState(false);
+    setIsImageEditing(false);
     setIsTagSearch(true);
     setImageSearchResults([])
     setSearchResults([]);
@@ -246,14 +252,13 @@ export default function HomePage(props) {
 
   // is passed to MapNote as argument to delete the image from database
   const deleteImage = (url) => {
+    setIsImageEditing(false);
     const imageRef = storageRef(storage, url);
     deleteObject(imageRef).then(() => {
       alert("Image Deleted");
     })
     setImageList(imageList.filter(item => item !== url));
   }
-
-
 
   // ----------------------------------------------------------------------
   // DISPLAYED ON WEBSITE

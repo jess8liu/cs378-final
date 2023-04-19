@@ -32,9 +32,9 @@ function ImageNote(props) {
 					<div className="title">
 						{title}
 					</div>
-					{/* <button className="save_btn" onClick={edit_funct}>
+					<button className="save_btn" onClick={edit_funct}>
 						Edit
-					</button> */}
+					</button>
 				</div>
 
 				<div className="body_section">

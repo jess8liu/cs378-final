@@ -17,9 +17,9 @@ function MapNote(props) {
 					<div className="title">
 						{props.title}
 					</div>
-					{/* <button className="save_btn" onClick={edit_funct}>
+					<button className="save_btn" onClick={edit_funct}>
 						Edit
-					</button> */}
+					</button>
 				</div>
 
 				<div className="body_section">

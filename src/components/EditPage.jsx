@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import { uid } from 'uid';
 import { auth, database } from "./config.jsx";
 import { set, ref, onValue, remove, update } from "firebase/database";
-// import Tooltip from '@mui/material/Tooltip';
 
 const EditPage = ({ note_info }) => {
 
