@@ -32,8 +32,9 @@ function ImageNote(props) {
 					<div className="title">
 						{title}
 					</div>
-					<button className="save_btn" onClick={edit_funct}>
-						Edit
+					<button className="save_btn img_btn"
+						onClick={props.edit_funct} title="Edit Note">
+						<img className="btn_img" src={note_edit} alt="Note editing icon."/>
 					</button>
 				</div>
 
