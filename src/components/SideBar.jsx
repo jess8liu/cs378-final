@@ -11,7 +11,6 @@ function SideBar(props) {
             {/* Add logo image here */}
             <img src={require("../images/bitmap.png")} alt="Image of Parchment's logo." width={'50%'} />
           </div>
-
           <div>
             {/* Username */}
             <h3 className="username">{props.user}</h3>
@@ -33,13 +32,6 @@ function SideBar(props) {
 
         </div>
       </div>
-
-      {/* <LogoutButton 
-          authen={auth}
-          logout_dis={props.logout_dis}
-        /> */}
-
-
     </>
   );
 }

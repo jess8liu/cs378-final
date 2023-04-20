@@ -14,6 +14,7 @@ import ImageEditPage from "./ImageEditPage"
 import { storage } from "./config.jsx";
 import { ref as storageRef, uploadBytes, listAll, getDownloadURL, deleteObject, updateMetadata, uploadBytesResumable, getMetadata } from "firebase/storage";
 
+import books from "../images/books.png"
 
 export default function HomePage(props) {
   // ----------------------------------------------------------------------
@@ -319,7 +320,7 @@ export default function HomePage(props) {
         {/* ------------------------------------------------------------------- */}
         {/* List of Notes */}
         <div className="note_list box">
-          <div>
+          <div className="center_box">
             {/* Show the notes if person is not currently editing the notes */}
 
             {!isEditing && !isMapEditing && !isImageEditing ? (
@@ -328,9 +329,12 @@ export default function HomePage(props) {
                 {!isSearching ? (
                   <>
                     <div className="home_box">
-                      <h3>
+                      <h2>
                         All Notes
-                      </h3>
+                      </h2>
+                      {/* <div className="info_prop">
+                        <img className="page_doll" src={books} />
+                      </div> */}
                     </div>
 
                     {imageList.map((url) => (
@@ -364,7 +368,7 @@ export default function HomePage(props) {
                   (
                     <>
                       <div className="home_box">
-                        <h3>
+                        <h2>
                           {isTagSearch ? (
                             <>
                             {tagSearched}
@@ -374,8 +378,7 @@ export default function HomePage(props) {
                             Search Results for '{search}'
                             </>
                           )}
-                          
-                        </h3>
+                        </h2>
                       </div>
 
                       {/* displays the searched image notes */}
