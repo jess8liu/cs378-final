@@ -34,6 +34,18 @@ button {
   width: 120px;
 }
 
+.login_header {
+  background-color: #588157;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font: white;
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+  width: 302px;
+}
+
 .login_box {
   border: lightgray 1px solid;
   background-color: white;
@@ -41,6 +53,44 @@ button {
   margin: 0 auto;
   padding: 1%;
   width: 300px;
+}
+
+.login {
+  padding: 2%;
+}
+
+.info {
+  display: flex;
+  background-image: url(./images/forest.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+}
+
+.info_box {
+  background-color: white;
+  border: lightgray 1px solid;
+  float: left;
+  padding: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.info_character {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 20%;
+  padding: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 7.5%;
+}
+
+.page_doll {
+  width: 100%;
+  float: right;
 }
 
 
@@ -176,8 +226,7 @@ input {
 
 .search_btn {
   /* float: right; */
-  margin: 0 .5% .5% .5%;
-  padding: .5%;
+  margin: 0 0 0 .5%;
 }
 
 
@@ -188,13 +237,12 @@ input {
 .subheader {
   border: none;
   margin: 0;
-  /* padding: 2%; */
   background-color: #588157;
 }
 
 .subheader_btns_box {
   display: flex;
-  padding: .5%;
+  padding: .5% 1.5% .5% 1.5%;
 }
 
 .note_editor_btn {

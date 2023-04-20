@@ -9,6 +9,8 @@ import { auth } from "./config";
 
 import HomePage from "../components/HomePage";
 
+import person from "../images/owlguy.png";
+
 export default function LoginPage() {
   // -------------------------------------------------------------------------------
   // STATE VARIABLES
@@ -64,20 +66,46 @@ export default function LoginPage() {
 
           <div className="login_logo">
 
-              {/* Add logo image here */}
-              <img  className="login_img"
-                    src={require("../images/bitmap.png")} 
-                    alt="Image of Parchment's logo." />
+            {/* Add logo image here */}
+            <img className="login_img"
+              src={require("../images/bitmap.png")}
+              alt="Image of Parchment's logo." />
 
           </div>
-          <br/>
-          <br/>
 
+          <div className="info">
+            <br />
+            <br />
+            <div className="info_box">
+              <h1>
+                Welcome to Parchment!
+              </h1>
+              <h3>
+                Keep note-taking in easy mode.
+              </h3>
 
+              <hr />
+
+              <p>
+                Keep track of characters, storylines, maps, and images here!
+              </p>
+            </div>
+
+            <br />
+            <br />
+          </div>
+          <div className="info_character">
+              <img className="page_doll" src={person}/>
+            </div>
+          <br />
+          <br />
           {/*----------------------- SIGN UP ----------------------- */}
-
+          <div className="login_header">
+            <p>
+              Make an Account
+            </p>
+          </div>
           <div className="login_box">
-            <p> Sign up for an account: </p>
 
             <input
               type="text"
@@ -93,7 +121,8 @@ export default function LoginPage() {
               onChange={(e) => setS_Password(e.target.value)}
             />
             <button
-              className="btn"
+              className="btn login"
+              title="Make an account"
               onClick={(e) => {
                 document.getElementById("sign_email").value = "";
                 document.getElementById("sign_password").value = "";
@@ -105,11 +134,14 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <br/>
+          <br />
           {/*----------------------- LOG IN ----------------------- */}
-
+          <div className="login_header">
+            <p>
+              Login to Your Account
+            </p>
+          </div>
           <div className="login_box">
-            <p> Log in to your account: </p>
             <input
               type="text"
               placeholder="Email/Username"
@@ -122,7 +154,8 @@ export default function LoginPage() {
               onChange={(e) => setL_Password(e.target.value)}
             />
             <button
-              className="btn"
+              className="btn login"
+              title="Log in"
               onClick={(e) => {
                 e.preventDefault();
                 login();
@@ -161,7 +194,7 @@ export default function LoginPage() {
         </>
       ) : (
         <>
-          
+
         </>
       )}
     </>
