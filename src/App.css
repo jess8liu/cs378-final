@@ -310,7 +310,6 @@ input {
 .logout {
   margin: 4%;
   padding: 5px 10px;
-  font-weight: bold;
   float: left;
 }
 
@@ -356,7 +355,19 @@ input {
 }
 
 .edit_save_btn {
+  margin: .5%;
+  padding: 1%;
+
+  background-color: #588157;
+  color: white;
+  font-weight: bold;
+
+  border-radius: 5px;
+  border: 1px #d9d9d9 solid;
+  
   float: right;
+  justify-content: center;
+  
 }
 
 .note_input {

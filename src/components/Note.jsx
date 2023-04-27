@@ -5,6 +5,7 @@ import { auth, database } from "./config.jsx";
 
 // Icons & images
 import note_edit from "../images/note_edit.svg";
+import trash from "../images/trash.svg";
 
 function Note(props) {
 
@@ -59,12 +60,12 @@ function Note(props) {
         </div>
 
         <div className="body_section">
-          <button className="setting_btn" onClick={toggleSetting}>
+          {/* <button className="setting_btn" onClick={toggleSetting}>
             Settings
-          </button>
+          </button> */}
 
-          <button className="trash_btn" onClick={() => handleDelete(props.note_info.cur_uid)}>
-            Trash
+          <button className="small_img_btn" onClick={() => handleDelete(props.note_info.cur_uid)}>
+            <img className="btn_img" src={trash} alt="Trash icon." title="Delete Note"/>
           </button>
         </div>
 
